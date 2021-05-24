@@ -1,0 +1,131 @@
+html {
+  height: 100%;
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  height: 100%;
+  /* 텍스트 렌더링 시 부드럽게 적용 */
+  -webkit-font-smoothing: antialiased;
+  /* 터치 단말기에서 모멘텀 스크롤을 사용*/
+  -webkit-overflow-scrolling: touch;
+}
+/* CSS 초기화 */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+div,
+article,
+section,
+p,
+ul,
+li,
+span,
+label {
+  box-sizing: border-box;
+}
+/* 초기화 끝 */
+body {
+  background: black;
+}
+#cover-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.video-wrapper {
+  /* video 가운데 정렬 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 위로 삐져나온 비디오를 감싸기 위해서 바운싱 스크롤 기능때문에  */
+  overflow: hidden;
+  /* 스크롤바는 움직이지만 오브젝트들은 가만히 있어야되기 때문에 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* viewport 높이 꽉차게 */
+  width: 100vw;
+  height: 100vh;
+}
+/* 브라우저에서 transform에서 조정을 함 => 미리 준비되어 퍼포먼스에 도움이 됨 */
+#vod {
+  /* 100% 크기 */
+  transform: scale(1);
+}
